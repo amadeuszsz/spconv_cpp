@@ -14,7 +14,22 @@ bool CompileInfo::arch_is_compiled_gemm(std::tuple<int, int> arch)   {
   if (arch == std::make_tuple(8, 6)){
       return true;
   }
+  if (arch == std::make_tuple(8, 7)){
+      return true;
+  }
   if (arch == std::make_tuple(8, 9)){
+      return true;
+  }
+  if (arch == std::make_tuple(9, 0)){
+      return true;
+  }
+  if (arch == std::make_tuple(10, 0)){
+      return true;
+  }
+  if (arch == std::make_tuple(10, 3)){
+      return true;
+  }
+  if (arch == std::make_tuple(11, 0)){
       return true;
   }
   if (arch == std::make_tuple(12, 0)){
